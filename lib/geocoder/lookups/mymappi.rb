@@ -14,7 +14,7 @@ module Geocoder::Lookup
     private # ----------------------------------------------------------------
 
     def base_query_url(query)
-      method = query.reverse_geocode? ? "reverse" : "search"
+      method = query.reverse_geocode? ? "geocoding/reverse" : "geocoding/direct"
       "#{protocol}://#{configured_host}/v1/#{method}?"
     end
 
