@@ -211,6 +211,18 @@ Data Science Toolkit provides an API whose response format is like Google's but 
 * **Limitations**: No reverse geocoding.
 * **Notes**: If you are hosting your own DSTK server you will need to configure the host name, eg: `Geocoder.configure(lookup: :dstk, dstk: {host: "localhost:4567"})`.
 
+### mymappi (`:mymappi`)
+
+* **API key**: required
+* **Quota**: 5k requests/day (3 req/sec), then [ability to purchase more](https://mymappi.com/pricing)
+* **Region**: world
+* **SSL support**: yes
+* **Languages**: ?
+* **Documentation**: https://api.mymappi.com/docs
+* **Terms of Service**: https://mymappi.com/legal
+* **Limitations**: [Data licensed under Open Database License (ODbL) (you must provide attribution).](https://www.openstreetmap.org/copyright)
+
+
 ### OSM Names (`:osmnames`)
 
 Open source geocoding engine which can be self-hosted. MapTiler.com hosts an installation for use with API key.
